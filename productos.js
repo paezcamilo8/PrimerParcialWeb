@@ -23,4 +23,14 @@ function viewProduct(productId) {
     window.location.href = `producto.html?id=${productId}`;
 }
 
+// Función para ir al carrito
+function goToCart() {
+    window.location.href = 'carrito.html';
+}
+
+// Función para cerrar sesión (volver al login)
+function logout() {
+    window.location.href = 'login.html';
+}
+
 fetchProducts();
