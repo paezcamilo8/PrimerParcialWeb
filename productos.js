@@ -8,6 +8,7 @@ function fetchProducts() {
                 const productElement = document.createElement('div');
                 productElement.classList.add('product');
                 productElement.innerHTML = `
+                    <img src="${product.image}" alt="${product.title}">
                     <h2>${product.title}</h2>
                     <p>Precio: $${product.price}</p>
                     <button onclick="viewProduct(${product.id})">Ver Producto</button>
