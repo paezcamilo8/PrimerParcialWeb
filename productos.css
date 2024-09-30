@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     padding: 20px;
+    text-align: center; /* Centra todo el contenido de la página */
 }
 
 header {
@@ -41,14 +42,16 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Estilo para la barra de filtro */
+/* Centrado de la barra de filtro */
 #filtros {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .filter-container {
     display: flex;
     align-items: center;
+    justify-content: center; /* Centrando la barra de filtro */
     margin-bottom: 15px;
 }
 
@@ -66,10 +69,11 @@ button:hover {
     max-width: 300px;
 }
 
-/* Estilo para los botones de categorías */
+/* Centrar los botones de categorías */
 .category-buttons {
     display: flex;
     gap: 10px;
+    justify-content: center; /* Centrando los botones de categoría */
 }
 
 .category-buttons button {
@@ -90,6 +94,7 @@ button:hover {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 20px;
+    justify-items: center; /* Centrando los productos */
 }
 
 .product {
