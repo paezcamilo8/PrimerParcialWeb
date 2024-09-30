@@ -18,6 +18,22 @@
         </div>
     </header>
 
+    <!-- Barra de filtro -->
+    <section id="filtros">
+        <div class="filter-container">
+            <label for="filter-input">Filtrar por: </label>
+            <input type="text" id="filter-input" placeholder="Buscar producto..." oninput="filterProductsByName()">
+        </div>
+
+        <div class="category-buttons">
+            <button onclick="filterByCategory('electronics')">Electronics</button>
+            <button onclick="filterByCategory('jewelery')">Jewelry</button>
+            <button onclick="filterByCategory('men\'s clothing')">Men's Clothing</button>
+            <button onclick="filterByCategory('women\'s clothing')">Women's Clothing</button>
+            <button onclick="resetFilter()">Mostrar Todo</button>
+        </div>
+    </section>
+
     <div id="productos"></div> <!-- Aquí se listarán los productos -->
 
     <script src="productos.js"></script>

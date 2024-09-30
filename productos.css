@@ -41,6 +41,50 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Estilo para la barra de filtro */
+#filtros {
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.filter-container label {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.filter-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Estilo para los botones de categorías */
+.category-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.category-buttons button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.category-buttons button:hover {
+    background-color: #218838;
+}
+
 #productos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
