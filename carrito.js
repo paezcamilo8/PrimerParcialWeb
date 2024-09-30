@@ -5,7 +5,6 @@ function fetchUserCarts() {
             const carritoDiv = document.getElementById('carrito');
             carritoDiv.innerHTML = '';
 
-            // Asumiendo que solo tomamos el primer carrito
             const cart = carts[0];
             const products = cart.products;
             let totalAmount = 0;
@@ -28,7 +27,6 @@ function fetchUserCarts() {
 
                         totalAmount += product.price * item.quantity;
 
-                        // Mostrar el total después de cargar todos los productos
                         if (carritoDiv.childElementCount === products.length) {
                             const totalDiv = document.createElement('div');
                             totalDiv.classList.add('total-amount');
@@ -42,5 +40,8 @@ function fetchUserCarts() {
         .catch(error => console.error('Error al obtener los carritos:', error));
 }
 
-// Llamar a la función al cargar la página
+function continueShopping() {
+    window.location.href = 'productos.html'; // Redirigir a productos
+}
+
 fetchUserCarts();
